@@ -67,6 +67,10 @@ Los **casos de uso** contienen la lógica de aplicación y **manipulan las entid
 
 ---
 
-## 10. ¿Cómo se puede aplicar Clean Architecture en una aplicación de microservicios con Spring Boot?
+### 10. ¿Cómo se puede aplicar Clean Architecture en una aplicación de microservicios con Spring Boot?
 
-- Definiendo **capas claras** de dominio, aplicación e infrae
+- Dividir la aplicación en microservicios con Clean Architecture en cada uno.
+- Cada microservicio tiene sus propias capas (Dominio, Aplicación, Infraestructura).
+- Usar interfaces en la capa de Dominio para desacoplar la infraestructura.
+- Comunicar microservicios mediante eventos o API REST sin exponer la lógica de negocio.
+- Usar contenedores (Docker, Kubernetes) para desplegar cada microservicio independientemente.

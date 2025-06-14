@@ -35,7 +35,43 @@
 
 ---
 
-### 6. ¿Qué aspectos deben considerarse al definir las capas en Clean Architecture dentro de un enfoque ADD?
+## 6. ¿Qué criterios se deben considerar al definir las capas en Clean Architecture dentro de un proceso ADD?
 
-- **Dominio:** Encapsula las reglas de negocio, independientes de frameworks o tecnologías.
-- **Aplicación:** Orquesta los casos de uso según las necesidades del n
+Para definir las capas en Clean Architecture usando ADD, se deben considerar:
+
+- Atributos de calidad del sistema (rendimiento, seguridad, etc.).
+- Separación de responsabilidades (Evitar que la infraestructura afecte la lógica de negocio).
+- Modularidad (Facilitar cambios en una capa sin afectar otras).
+- Inversión de dependencias (Las capas internas no dependen de las externas).
+
+## 7. ¿Cómo ADD ayuda a tomar decisiones arquitectónicas basadas en necesidades del negocio?
+
+ADD traduce las necesidades del negocio en decisiones arquitectónicas concretas.
+
+## 8. ¿Cuáles son los beneficios de combinar ADD con Clean Architecture en un sistema basado en microservicios?
+
+### Ventajas clave:
+
+- **Arquitectura basada en calidad**: ADD garantiza que se prioricen los atributos correctos.
+- **Bajo acoplamiento**: Clean Architecture evita dependencias innecesarias entre microservicios.
+- **Escalabilidad optimizada**: Se pueden desplegar microservicios de forma independiente.
+- **Fácil mantenimiento**: Cada microservicio sigue una estructura clara y desacoplada.
+- **Pruebas más eficientes**: Se pueden probar las capas internas sin necesidad de infraestructura real.
+
+## 9. ¿Cómo se asegura que la arquitectura resultante cumpla con los atributos de calidad definidos en ADD?
+
+- **Revisiones arquitectónicas periódicas** (Evaluar si se cumplen los atributos de calidad).
+- **Pruebas de carga y estrés** (Para evaluar rendimiento y escalabilidad).
+- **Prototipos y pruebas de concepto** (Validar decisiones antes de implementarlas a gran escala).
+- **Revisiones de código** (Para verificar que Clean Architecture se siga correctamente).
+- **Uso de métricas y monitoreo** (Tiempo de respuesta, consumo de recursos, etc.).
+
+## 10. ¿Qué herramientas o metodologías pueden ayudar a validar una arquitectura diseñada con ADD y Clean Architecture?
+
+### Herramientas y enfoques útiles:
+
+- **SonarQube**: Para evaluar calidad del código y seguir principios de Clean Architecture.
+- **Arquillian o JUnit**: Para pruebas unitarias y de integración.
+- **JMeter o Gatling**: Para pruebas de carga y rendimiento.
+- **Architectural Decision Records (ADR)**: Para documentar decisiones arquitectónicas.
+- **C4 Model**: Para visualizar la arquitectura de forma clara.
